@@ -15,7 +15,7 @@ Components used were:
 ![design 1](resources/design1.jpg)
 ![design 2](resources/design2.jpg)
 
-### Final product
+### Final prototype
 ![final product](resources/final_product.jpg)
 
 ## Made By:
