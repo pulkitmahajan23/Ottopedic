@@ -12,8 +12,8 @@ Components used were:
 * 3d printer
 
 ## CAD Design of the product
-![design 1](resources/design 1.jpeg)
-![design 2](resources/design 2.jpeg)
+![design 1](resources/design1.jpg)
+![design 2](resources/design2.jpg)
 
 ### Final product
-![final product](resources/final product.jpeg)
+![final product](resources/final_product.jpeg)
