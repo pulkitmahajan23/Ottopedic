@@ -17,3 +17,9 @@ Components used were:
 
 ### Final product
 ![final product](resources/final_product.jpeg)
+
+## Made By:
+* [Pulkit Mahajan](https://github.com/pulkitmahajan23)
+* [Suyash Agarwal](https://github.com/suyashagarwal1902)
+* [Ayush Bhushan](https://github.com/mechieanic)
+* [Simran Gangwani](https://github.com/crabsim)
