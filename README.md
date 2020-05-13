@@ -16,7 +16,7 @@ Components used were:
 ![design 2](resources/design2.jpg)
 
 ### Final product
-![final product](resources/final_product.jpeg)
+![final product](resources/final_product.jpg)
 
 ## Made By:
 * [Pulkit Mahajan](https://github.com/pulkitmahajan23)
