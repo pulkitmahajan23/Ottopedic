@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body style="background-color: black;color:#0994ff">
+        
+        <div class="col-md-6 m-auto">
+            <br>
+            <br>  
+            <div class= "content" >
+            <h1 class="mt-4">Dashboard</h1>
+            
+            <p class="lead mb-3">Welcome <%= name %> !</p>
+            <a href="/user/logout" class="btn btn-secondary">Logout</a>
+            </div>
+            </div>
+            
+            <div class="a" style="text-align: center;text-align: center;margin-top: 61px;border: solid;border-color: #0994ff;border-radius: 1.6em;border-width: thick;height: 350px;width: 648px;margin-left: 223px;font-size: larger;">
+                <h1 class="mt-4">Muscle to exercise</h1>
+                <div class="radio" style="padding-top: 5px;">
+                <input type="radio" name="r" id="r1" class="lead mb-3">Leg<br>
+            <input type="radio" name="r" id="r2" class="lead mb-3">Arm<br>
+            </div><div class="number">
+        <input type="number" name="name" id="uname" placeholder="Angle"><br>
+        <input type="number" name="name" id="no" placeholder="No." style="margin-top: 5px;"><br>
+        <button style="margin-top:13px;margin-top: 18px;background-color: #0994ff;color: white;border-radius: 1.6em;width: 76px;height: 37px;" onclick="pushFirebase()">Apply</button>
+        <!-- <br><a href="/msg" class="btn btn-secondary" style="margin-top: 11px;">Messenger</a> -->
+    </div>
+    </div>
+        <br>
+        
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCkaz_rGpNQzRX2QyDZh6-R3mbrhjfKZfQ",
+    authDomain: "autopedo1.firebaseapp.com",
+    databaseURL: "https://autopedo1.firebaseio.com",
+    projectId: "autopedo1",
+    storageBucket: "autopedo1.appspot.com",
+    messagingSenderId: "490299653946",
+    appId: "1:490299653946:web:e7234acb7d2e57c0ab1a03",
+    measurementId: "G-PYZ6LFCRN3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  function pushFirebase(){
+      const fb=firebase.database().ref()
+      string=document.getElementById('uname').value
+      string1=document.getElementById('no').value
+      
+      
+      
+      fb.child('LED_STATUS/').set(1)
+      fb.child('ANGLE/').set(string)
+      fb.child('NO/').set(string1)
+
+  }
+//   function setData(){
+//       const fb=firebase.database().ref()
+//       string=document.getElementById('uname').value
+//       data={string}
+//       fb.child('LED_STATUS/').set("yo")
+//   }
+</script>
+    </body>
+</html> 
